@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.local.books.model.Book" />
+
+        <variable
+            name="imageBinding"
+            type="com.local.books.model.ImageBinding" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_view_book_image"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/alert_light_frame" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/text_view_book_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@{book.title}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_book_image" />
+
+        <ImageView
+            android:id="@+id/image_view_addbook_row"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:imageResource="@{imageBinding.resId}"
+            app:layout_constraintEnd_toEndOf="@+id/image_view_book_image"
+            app:layout_constraintTop_toTopOf="@+id/image_view_book_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
