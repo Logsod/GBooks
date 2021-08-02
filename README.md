@@ -1,6 +1,7 @@
 # GBooks
 
-
+![](https://github.com/Logsod/GBooks/blob/master/images/Screenshot_1627829239.png)
+![](https://github.com/Logsod/GBooks/blob/master/images/Screenshot_1627829274.png)
 
 #Dependencies 
 [Retrofit](https://square.github.io/retrofit/)
