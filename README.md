@@ -1,7 +1,8 @@
 # GBooks
 
 
-##Dependencies 
+
+#Dependencies 
 [Retrofit](https://square.github.io/retrofit/)
 [Rxandroid](https://github.com/ReactiveX/RxAndroid/)
 [Groupie](https://github.com/lisawray/groupie)
