@@ -1,6 +1,5 @@
 # GBooks
 Simple book search & library app
-fsdf
 #Dependencies 
 [Retrofit](https://square.github.io/retrofit/)
 [Rxandroid](https://github.com/ReactiveX/RxAndroid/)
